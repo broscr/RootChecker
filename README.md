@@ -1,0 +1,1 @@
+### Root and Emulator Checker
