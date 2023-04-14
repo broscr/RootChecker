@@ -1,5 +1,5 @@
-apply plugins 'maven-publish'
-apply plugins 'siging'
+apply plugin: 'maven-publish'
+apply plugin: 'signing'
 
 task androidSourcesJar(type: Jar) {
     archiveClassifier.set('sources')
@@ -39,7 +39,7 @@ afterEvaluate {
                 }
 
                 artifact androidSourcesJar
-                artifact javadocJar
+                //artifact javadocJar
 
                 pom {
                     name = PUBLISH_ARTIFACT_ID
@@ -47,7 +47,7 @@ afterEvaluate {
                     url = 'https://github.com/broscr/RootChecker'
                     licenses {
                         license {
-                            name = 'Root Checker License'
+                            name = 'MIT License'
                             url = 'https://github.com/broscr/RootChecker/blob/master/LICENSE'
                         }
                     }
