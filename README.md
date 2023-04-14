@@ -3,7 +3,7 @@ Root and emulator control library for Android.
 
 #### Install
 ```code
-implementation "io.github.broscr:RootChecker:0.1"
+implementation "io.github.broscr:RootChecker:0.2"
 ```
 
 #### Usage
