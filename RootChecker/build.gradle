@@ -3,7 +3,14 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
+ext {
+    PUBLISH_GROUP_ID = 'io.github.broscr'
+    PUBLISH_VERSION = '0.0.1'
+    PUBLISH_ARTIFACT_ID = 'root-checker'
+}
+
 android {
+
     namespace 'com.broscr.rootchecker'
     compileSdk 33
 
@@ -28,6 +35,7 @@ android {
     kotlinOptions {
         jvmTarget = '11'
     }
+
 }
 
 dependencies {

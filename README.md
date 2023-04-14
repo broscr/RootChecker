@@ -1,1 +1,2 @@
-### Root and Emulator Checker
+### RootChecker
+Root and emulator control library for Android.
