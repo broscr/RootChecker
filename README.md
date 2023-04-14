@@ -10,6 +10,6 @@ implementation "io.github.broscr:RootChecker:0.1"
 ```code
 // If the device is rooted, it returns true. 
 RootChecker.isRooted()
-//If the device is an emulator, it returns true. 
+// If the device is an emulator, it returns true. 
 RootChecker.isEmulator() 
 ```

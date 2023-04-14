@@ -9,6 +9,9 @@ class RootChecker {
     companion object {
         private const val TAG = "RootChecker"
 
+        /** If the device is rooted, it returns true.
+         *
+         */
         fun isRooted(): Boolean {
             // Check for init.d directory and installation method
             val initDir = File("/system/etc/init.d")
@@ -58,6 +61,9 @@ class RootChecker {
             return false
         }
 
+        /** If the device is an emulator, it returns true.
+         *
+         */
         fun isEmulator(): Boolean {
             // Check for emulator
             if (Build.FINGERPRINT.startsWith("generic") || Build.FINGERPRINT.startsWith("unknown") ||
