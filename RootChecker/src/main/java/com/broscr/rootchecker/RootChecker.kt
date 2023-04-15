@@ -1,5 +1,7 @@
 package com.broscr.rootchecker
 
+import android.content.Context
+import android.content.pm.ApplicationInfo
 import android.os.Build
 import android.util.Log
 import java.io.DataOutputStream
@@ -16,7 +18,7 @@ class RootChecker {
             // Check for init.d directory and installation method
             val initDir = File("/system/etc/init.d")
             if (initDir.exists() && initDir.isDirectory) {
-            // init.d directory exists, which is a common installation method for root apps
+                // init.d directory exists, which is a common installation method for root apps
                 return true
             }
 
@@ -74,6 +76,27 @@ class RootChecker {
                 return true
             }
             return false
+        }
+
+        /** If the device using proxy, it returns true.
+         *
+         */
+        fun isUsingProxy(): Boolean {
+            // Check for proxy
+            val proxyHost =
+                System.getProperty("https.proxyHost") ?: System.getProperty("http.proxyHost")
+            val proxyPort =
+                System.getProperty("https.proxyPort") ?: System.getProperty("http.proxyPort")
+
+            return !proxyHost.isNullOrBlank() && !proxyPort.isNullOrBlank()
+        }
+
+        /** If the application is debuggable, it returns true
+         *
+         * @param Context
+         */
+        fun isDebuggable(context:Context): Boolean {
+            return (context.applicationInfo.flags and ApplicationInfo.FLAG_DEBUGGABLE) != 0
         }
     }
 }
