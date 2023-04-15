@@ -43,7 +43,7 @@ afterEvaluate {
 
                 pom {
                     name = PUBLISH_ARTIFACT_ID
-                    description = 'Root and Emulator checker for Android'
+                    description = 'RootChecker is a lightweight Android library that provides easy and efficient methods to determine whether the device is rooted, an emulator, using a proxy, or is debuggable. This library is useful for developers who want to improve the security and performance of their applications by preventing them from running on rooted devices, emulators, devices using a proxy, or debuggable devices.'
                     url = 'https://github.com/broscr/RootChecker'
                     licenses {
                         license {
