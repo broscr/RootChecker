@@ -12,11 +12,15 @@ class MainActivity : AppCompatActivity() {
         val textView = findViewById<TextView>(R.id.textview)
 
         textView.text =
-            "Rooted: => ${RootChecker.isRooted()} \nEmulator => ${RootChecker.isEmulator()} " +
+            buildString {
+                append("Rooted: => ${RootChecker.isRooted()} \nEmulator => ${RootChecker.isEmulator()} ")
+                append(
                     "\nProxy => ${RootChecker.isUsingProxy()} \nDebuggable => ${
                         RootChecker.isDebuggable(
-                            this
+                            this@MainActivity
                         )
                     }"
+                )
+            }
     }
 }

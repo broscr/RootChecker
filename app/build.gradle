@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.broscr.rootchecker'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.broscr.rootchecker"
         minSdk 21
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "0.0.1"
 

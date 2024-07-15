@@ -28,7 +28,7 @@ There are several reasons why you might consider using RootChecker:
 - **Security:** Rooted devices, emulators, devices using a proxy, or debuggable devices can pose a potential security risk for applications. RootChecker enhances security by preventing applications from running on such devices.
 
 - **Compatibility:** RootChecker is compatible with various Android versions and devices, ensuring that your application works across different devices and versions.
-  --  Android 4.0 (API level 14) and above.
+  --  Android 5.0 (API level 21) and above.
   --  Java 8 and above.
 
 - **Performance:** RootChecker can improve the performance of your application. For example, if your application does not work on a rooted device or a device using a proxy, it prevents unnecessary code from executing, thus improving performance.
@@ -39,7 +39,7 @@ There are several reasons why you might consider using RootChecker:
 You can easily install RootChecker by adding the following dependency to your app-level `build.gradle` file:
 
 ```groovy
-implementation "io.github.broscr:RootChecker:0.4"
+implementation "io.github.broscr:RootChecker:0.5"
 ```
 ### How to usage ?
 
@@ -58,6 +58,8 @@ RootChecker.isUsingProxy()
 // If the application is debuggable, it returns true.
 RootChecker.isDebuggable(this)
 ```
+
+[](./image.png)
 
 ##### LICENSE
 
