@@ -39,7 +39,7 @@ afterEvaluate {
             from components.findByName(variant.name)
 
             groupId = 'com.broscr'
-            artifactId = 'RootChecker'
+            artifactId = 'rootchecker'
             version = '1.0.5'
         }
     }
