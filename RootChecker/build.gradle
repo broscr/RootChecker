@@ -38,9 +38,9 @@ afterEvaluate {
         publishing.publications.create(variant.name, MavenPublication) {
             from components.findByName(variant.name)
 
-            groupId = 'com.broscr'
+            groupId = 'com.github.broscr'
             artifactId = 'rootchecker'
-            version = '1.0.7'
+            version = '1.0.8'
         }
     }
 }
