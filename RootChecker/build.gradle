@@ -33,17 +33,21 @@ android {
 
 }
 
+afterEvaluate {
+    android.libraryVariants.each { variant ->
+        publishing.publications.create(variant.name, MavenPublication) {
+            from components.findByName(variant.name)
+
+            groupId = 'com.broscr'
+            artifactId = 'RootChecker'
+            version = '1.0.5'
+        }
+    }
+}
+
 dependencies {
     implementation 'androidx.core:core-ktx:1.13.1'
     implementation 'androidx.appcompat:appcompat:1.7.0'
 }
 
-publishing {
-    publications {
-        bar(MavenPublication){
-            groupId "com.broscr"
-            artifactId "RootChecker"
-            version "1.0.5"
-        }
-    }
-}
+

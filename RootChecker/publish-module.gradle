@@ -58,11 +58,6 @@ afterEvaluate {
                             email = ''
                         }
                     }
-                    scm {
-                        connection = 'scm:git:github.com/broscr/RootChecker.git'
-                        developerConnection = 'scm:git:ssh://github.com/broscr/RootChecker.git'
-                        url = 'https://github.com/broscr/RootChecker/tree/master'
-                    }
                 }
             }
         }
