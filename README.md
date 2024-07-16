@@ -1,5 +1,5 @@
 ### RootChecker
-![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.broscr/RootChecker/badge.svg)
+[![JitPack](https://jitpack.io/v/broscr/RootChecker.svg)](https://jitpack.io/#broscr/RootChecker)
 
 ---
 
@@ -39,7 +39,17 @@ There are several reasons why you might consider using RootChecker:
 You can easily install RootChecker by adding the following dependency to your app-level `build.gradle` file:
 
 ```groovy
-implementation "io.github.broscr:RootChecker:0.5"
+// dependencyResolutionManagement {
+//   repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+//   repositories {
+//     mavenCentral()
+    maven { url 'https://jitpack.io' }
+//   }
+// }
+```
+
+```groovy
+implementation 'com.github.broscr:RootChecker:Tag'
 ```
 ### How to usage ?
 
