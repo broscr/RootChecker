@@ -1,15 +1,8 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'maven-publish'
 }
-
-ext {
-    PUBLISH_GROUP_ID = 'io.github.broscr'
-    PUBLISH_VERSION = '0.5'
-    PUBLISH_ARTIFACT_ID = 'RootChecker'
-}
-
-apply from: "publish-module.gradle"
 
 android {
 
@@ -43,4 +36,14 @@ android {
 dependencies {
     implementation 'androidx.core:core-ktx:1.13.1'
     implementation 'androidx.appcompat:appcompat:1.7.0'
+}
+
+publishing {
+    publications {
+        bar(MavenPublication){
+            groupId "com.broscr"
+            artifactId "RootChecker"
+            version "1.0.5"
+        }
+    }
 }
