@@ -40,7 +40,7 @@ afterEvaluate {
 
             groupId = 'com.broscr'
             artifactId = 'rootchecker'
-            version = '1.0.5'
+            version = '1.0.7'
         }
     }
 }
