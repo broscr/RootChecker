@@ -54,7 +54,7 @@ There are several reasons why you might consider using RootChecker:
 You can easily install RootChecker by adding the following dependency to your app-level `build.gradle` file:
 
 ```groovy
-implementation "io.github.broscr:RootChecker:0.5"
+implementation "io.github.broscr:RootChecker:0.4"
 ```
 ### How to usage ?
 
