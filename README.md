@@ -1,6 +1,21 @@
 ### RootChecker
-[![JitPack](https://jitpack.io/v/broscr/RootChecker.svg)](https://jitpack.io/#broscr/RootChecker)
+This project has moved to a new repository. Please follow the link below to access the latest version of the project.
 
+## Security Utils
+
+The development of this project is now continuing at the following repository:
+
+[Security Utils](https://github.com/broscr/security-utils)
+
+Please update your bookmarks and clone the new repository to get the latest updates and contributions.
+
+## How to Clone the Security Utils
+
+To clone the new repository, use the following command:
+
+```bash
+git clone https://github.com/broscr/security-utils.git
+```
 ---
 
 ### What is RootChecker?
@@ -39,17 +54,7 @@ There are several reasons why you might consider using RootChecker:
 You can easily install RootChecker by adding the following dependency to your app-level `build.gradle` file:
 
 ```groovy
-// dependencyResolutionManagement {
-//   repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-//   repositories {
-//     mavenCentral()
-    maven { url 'https://jitpack.io' }
-//   }
-// }
-```
-
-```groovy
-implementation 'com.github.broscr:RootChecker:Tag'
+implementation "io.github.broscr:RootChecker:0.5"
 ```
 ### How to usage ?
 
